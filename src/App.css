@@ -1,4 +1,5 @@
 .App {
+  padding-top: 36px;
   text-align: center;
 }
 
@@ -27,7 +28,7 @@
 .App-link {
   color: #61dafb;
 }
-
+/*
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +36,23 @@
   to {
     transform: rotate(360deg);
   }
+  */
+.SearchForm-wrapper{
+  display: flex;
+  justify-content: center;
+  /*
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;*/
+}
+.MoviesList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+}
+.MoviesList-item{
+  margin-bottom: 24px;
+  width: 49%;
 }
