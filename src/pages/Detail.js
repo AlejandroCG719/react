@@ -24,15 +24,10 @@ export class Detail extends Component{
         const { id } = this.props.match.params;
         this._fetchMovie({ id });
     }
-    _goBack (  ){
-        window.history.back();
-    }
-
     render() {
         const { Title, Poster, Actors, Metascore, Plot  } = this.state.movie;
         return (
             <div>
-                <button onClick={this._goBack}>Volver</button>
                 <h1>{ Title }</h1>
                 <img src={ Poster } alt={ Title }/>
                 <h3>{ Actors }</h3>
